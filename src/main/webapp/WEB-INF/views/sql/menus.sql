@@ -1,0 +1,14 @@
+CMD > sqlplus /nolog
+ SQL> conn /as sysdba
+CREATE TABLE MENUS (
+    MENU_ID       VARCHAR2(6)  PRIMARY KEY       -- 메뉴아이디
+  , MENU_NAME     VARCHAR2(30)      -- 메뉴이름
+  , MENU_SEQ      NUMBER(6)         -- 순번  
+)
+
+INSERT INTO MENUS VALUES ('MENU01', 'HTML',   1);
+INSERT INTO MENUS VALUES ('MENU02', 'CSS',   2);
+INSERT INTO MENUS VALUES ('MENU03', 'JAVASCRIPT',   3);
+COMMIT
+
+SELECT * FROM MENUS;
