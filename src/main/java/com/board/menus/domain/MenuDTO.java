@@ -6,7 +6,7 @@ public class MenuDTO {
     private String menu_name;
     private int menu_seq;
     
-    // Getter / setter
+    // Getter / Setter
     public String getMenu_id() {
     	return menu_id;
 	}
@@ -41,6 +41,5 @@ public class MenuDTO {
 	public String toString() {
 		return "MenuDTO [menu_id=" + menu_id + ", menu_name=" + menu_name + ", menu_seq=" + menu_seq + "]";
 	}
-   
     
 }
